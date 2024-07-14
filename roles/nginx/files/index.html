@@ -1,13 +1,178 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Francisco de Matos - Linux Sysadmin Junior</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .intro h2 {
+            margin-top: 0;
+        }
+        .skills, .projects, .services, .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+        }
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li, .projects ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .projects ul li:last-child, .services ul li:last-child {
+            border-bottom: none;
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML page deployed using Ansible and Nginx.</p>
+    <header>
+        <h1>Francisco de Matos</h1>
+        <p>Linux Sysadmin Junior</p>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I'm Francisco de Matos, a passionate and dedicated Linux Sysadmin Junior. Here you'll find information about my skills, projects, and the services I offer. Feel free to explore and contact me for any inquiries or collaborations.</p>
+        </section>
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Linux System Administration</li>
+                <li>Network Configuration</li>
+                <li>Server Management</li>
+                <li>Shell Scripting</li>
+                <li>Monitoring and Maintenance</li>
+            </ul>
+        </section>
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project 1: Server Optimization</h3>
+                    <p>Optimized the performance of a Linux server for a medium-sized business, resulting in a 20% increase in efficiency.</p>
+                </li>
+                <li>
+                    <h3>Project 2: Network Configuration</h3>
+                    <p>Configured a secure and reliable network for a small enterprise, enhancing their overall security posture.</p>
+                </li>
+                <li>
+                    <h3>Project 3: Automation Scripts</h3>
+                    <p>Developed automation scripts to streamline routine tasks, saving the team approximately 15 hours per week.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2 class="section-title">Services</h2>
+            <ul>
+                <li>
+                    <h3>Server Setup</h3>
+                    <p>Professional setup and configuration of Linux servers tailored to your needs. Price: $100</p>
+                </li>
+                <li>
+                    <h3>Network Configuration</h3>
+                    <p>Secure and efficient network configuration services. Price: $75/hour</p>
+                </li>
+                <li>
+                    <h3>IT Support</h3>
+                    <p>Comprehensive IT support for your business. Price: $50/hour</p>
+                </li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="mailto:yourname@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Francisco de Matos. All rights reserved.</p>
+    </footer>
 </body>
 </html>
